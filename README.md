@@ -6,9 +6,9 @@ In this project, you will build a simple Unix shell.
 In this project, you will build a simple Unix shell. The shell is the heart of the command-line interface, and thus is central to the Unix/C programming environment. Mastering use of the shell is necessary to become proficient in this world; knowing how the shell itself is built is the focus of this project.
 There are three specific objectives to this assignment:
 
-• To further familiarize yourself with the Unix/Linux programming environment.
-• To learn how processes are created, destroyed, and managed.
-• To gain exposure to the necessary functionality in shells.
+* To further familiarize yourself with the Unix/Linux programming environment.
+* To learn how processes are created, destroyed, and managed.
+* To gain exposure to the necessary functionality in shells.
 
 
 # Overview
@@ -47,9 +47,9 @@ In our example above, the user typed ls but the shell knew to execute the progra
 # Built-in Commands
 Whenever your shell accepts a command, it should check whether the command is a built-in command or not. If it is, it should not be executed like other programs. Instead, your shell will invoke your implementation of the built-in command. For example, to implement the exit built-in command, you simply call exit(0); in your tash source code, which then will exit the shell. In this project, you should implement exit, cd, and path as built-in commands.
 
-• exit: When the user types exit, your shell should simply call the exit system call with 0 as a parameter. It is an error to pass any arguments to exit.
-• cd: cd always takes one argument (0 or >1 args should be signaled as an error). To change directories, use the chdir()system call with the argument supplied by the user; if chdir fails, that is also an error.
-• path: The path command takes 0 or more arguments, with each argument separated by whitespace from the others. A typical usage would be like this: tash> path /bin /usr/bin, which would add /bin and /usr/bin to the search path of the shell. If the user sets path to be empty, then the shell should not be able to run any programs (except built-in commands). The path command always overwrites the old path with the newly specified path.
+* exit: When the user types exit, your shell should simply call the exit system call with 0 as a parameter. It is an error to pass any arguments to exit.
+* cd: cd always takes one argument (0 or >1 args should be signaled as an error). To change directories, use the chdir()system call with the argument supplied by the user; if chdir fails, that is also an error.
+* path: The path command takes 0 or more arguments, with each argument separated by whitespace from the others. A typical usage would be like this: tash> path /bin /usr/bin, which would add /bin and /usr/bin to the search path of the shell. If the user sets path to be empty, then the shell should not be able to run any programs (except built-in commands). The path command always overwrites the old path with the newly specified path.
 
 
 # Redirection
