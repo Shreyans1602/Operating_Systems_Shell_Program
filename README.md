@@ -115,5 +115,8 @@ Finally, keep versions of your code. More advanced programmers will use a source
 
 
 # Testing
-Make sure you compile your program as follows: gcc tash.c -o tash -Wall -Werror -O
+Make sure you compile your program as follows: 
+
+gcc tash.c -o tash -Wall -Werror -O
+
 There should not be any error messages and warning during compilation.
