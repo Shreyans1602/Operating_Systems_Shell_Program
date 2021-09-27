@@ -23,6 +23,7 @@ Your basic shell, called tash (short for TexAs SHell), is basically an interacti
 The shell can be invoked with either no arguments or a single argument; anything else is an error. Here is the no-argument way: 
 
 prompt> ./tash
+
 tash>
 
 At this point, tash is running, and ready to accept commands. Type away! The mode above is called interactive mode. It allows the user to type commands directly. The shell also supports a batch mode, which instead reads input from a batch file and executes commands from therein. Here is how you run the shell with a batch file named batch.txt: 
